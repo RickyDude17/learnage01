@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo -e "Computer name: "$(lshw | grep "" -m1)
 echo -e "CPU: "$(lshw | grep "Product" "Vendor" "Physical ID" "Bus info" "Width" -m1)
 echo -e "RAM: "$(lshw | grep "Description" "Physical ID" "Size" -ml)
