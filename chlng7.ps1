@@ -1,5 +1,7 @@
-echo -e "Computer name: "$(lshw | grep "" -m1)
-echo -e "CPU: "$(lshw | grep "Product" "Vendor" "Physical ID" "Bus info" "Width" -m1)
-echo -e "RAM: "$(lshw | grep "Description" "Physical ID" "Size" -ml)
-echo -e "Display adaptor: "$(lshw | grep "Description" "Product" "Vendor" "Physical ID" "Bus info" "Width" "Clock" "Capabilities" "Configuration" "Resources" -ml)
-echo -e "Network adaptor: "$(lshw | grep "Description" "Product" "Vendor" "Physical ID" "Bus info" "Logical name" "Version" "Serial" "Size" "Capacity" "Width" "Clock" "Capabilities" "Configuration" "Resources" -ml)
+echo "show system info"
+echo "Computer name: "$( "" -m1)
+echo "CPU: "$( "Product" "Vendor" "Physical ID" "Bus info" "Width")
+echo "RAM: "$( "Description" "Physical ID" "Size")
+echo "Display adaptor: "$( "Description" "Product" "Vendor" "Physical ID" "Bus info" "Width" "Clock" "Capabilities" "Configuration" "Resources")
+echo "Network adaptor: "$( "Description" "Product" "Vendor" "Physical ID" "Bus info" "Logical name" "Version" "Serial" "Size" "Capacity" "Width" "Clock" "Capabilities" "Configuration" "Resources")
+echo "Information Complete."
